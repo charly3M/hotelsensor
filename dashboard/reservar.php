@@ -1,7 +1,7 @@
 <?php require_once "vistas/parte_superior.php"?>
 <!-- <link rel="stylesheet" href="estilos.css"> -->
         
-
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 <div class="container">
     <h1>Reservar Habitacion</h1>
