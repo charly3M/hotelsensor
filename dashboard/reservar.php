@@ -87,7 +87,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     </div>
 </div>  
 
-<script src="http://momentjs.com/downloads/moment.min.js"></script>
+<script src="https://momentjs.com/downloads/moment.min.js"></script>
 
 
 
