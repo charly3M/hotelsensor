@@ -29,9 +29,8 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
     </div>    
     <br>  
   
-
-    <!--Modal para CRUD-->
-<div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <!--Modal para CRUD-->
+    <div class="modal fade" id="modalCRUD" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -65,10 +64,13 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                 </div>   
 
                 <div class="form-group">
-                <label for="tipo" class="col-form-label">Ocupación:</label>
-                <input type="text" class="form-control" id="tipo">
-                </div>  
-                             
+                <label for="tipo" class="col-form-label">Tipo:</label>
+                <select id="tipo" name="tipo" class="form-control" >
+                <option value="economicapar" selected>EconomicaPar - $900</option>
+                <option value="economicacuatro">EconomicaCuatro - $1999</option>
+                <option value="suitepar">SuitePar - $3000</option>
+                </select>
+                </div>                              
 
                 <div class="form-group">
                 <label for="cantidad" class="col-form-label">¿Cuántas habitaciones?:</label>
@@ -76,7 +78,7 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
                 </div>  
                
             </div>
-            <div class="modal-footer" >
+            <div class="modal-footer">
                 <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
                 <button type="submit" id="btnGuardar" class="btn btn-dark">Guardar</button>
             </div>
@@ -84,6 +86,9 @@ $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 </div>  
+
+<script src="http://momentjs.com/downloads/moment.min.js"></script>
+
 
 
 <?php require_once "vistas/parte_inferior.php"?>
